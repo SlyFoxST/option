@@ -9,28 +9,23 @@
 
 get_header();
 ?>
-
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
-		<?php
-		while ( have_posts() ) :
-			the_post();
-
-			get_template_part( 'template-parts/content', get_post_type() );
-
-			the_post_navigation();
-
-			// If comments are open or we have at least one comment, load up the comment template.
+			<? //If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
 				comments_template();
 			endif;
+			?>
+			<?php $args = array(
+	// изменяем текст кнопки отправки 
+	'label_submit'=>'Запостить коммент',
+	// удаляем сообщение со списком разрешенных HTML-тегов из-под формы комментирования
+	'comment_notes_after' => '',
+	// указываем собственный HTML-код для вывода поля комментария
+	'comment_field' => '<p class="comment-form-comment"><label for="comment">Твой коммент</label><br /><textarea id="comment" name="comment" aria-required="true"></textarea></p>',
+);
+comment_form( $args );?>
 
-		endwhile; // End of the loop.
-		?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
 
 <?php
 get_sidebar();

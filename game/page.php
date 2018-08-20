@@ -14,7 +14,7 @@
 
 get_header();
 ?>
-
+<h1>Это страница page</h1>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
@@ -36,5 +36,4 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

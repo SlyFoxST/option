@@ -1,0 +1,135 @@
+body{
+	background: #E5E5E5;
+}
+
+.user-content{
+ 
+}
+.h1-blog-post,.h2-content-user,.title-form-comment{
+	font-family: catamaran-bold;
+	font-size: 36px;
+	line-height: 32px;
+	color: #434656;
+	font-weight: 900;
+
+}
+.content-not-page{
+	text-align: center;
+}
+.img-blog-post{
+	border-radius: 8px;
+}
+.img-blog-post img{
+	border-radius: 8px;
+	float:left;
+	margin: 0px 32px 32px 0px;
+	-webkit-box-shadow: 0 18px 60px 0px rgba(25, 83, 160, 0.45);
+	-ms-box-shadow: 0 18px 60px 0px rgba(25, 83, 160, 0.45);
+	-box-shadow: 0 18px 60px 0px rgba(25, 83, 160, 0.45);
+}
+.content-text-blog,.content-user{
+	font-family: "Catamaran", sana-serif;
+	font-size: 18px;
+	line-height: 32px;
+}
+.content-text-blog p{
+	font-family: "Catamaran", sana-serif;
+	font-size: 18px;
+	line-height: 32px;
+}
+
+/*button gambling*/
+.btn-gambling{
+margin: 100px;
+position: relative;
+background-color: #0076FF;
+display: inline-block;
+width: 198px;
+height: 52px;
+-webkit-border-radius: 10em;
+-ms-border-radius: 10em;
+-border-radius: 10em;
+transition: all .25s;
+}
+.btn-gambling:hover{
+ box-shadow: 0 10px 30px 0px #66b7dc;
+}
+.btn-gambling a{
+font-family: Catamaran;
+font-weight: 900;
+font-size: 18px;
+color: #fff;
+left: 18%;
+top: 26%;
+/* line-height: 50px; */
+display: block;
+position: relative;
+}
+.btn-gambling a:hover,.btn-gambling a:visited{
+	color: #fff;
+}
+.group{
+	cursor: pointer;
+	position: absolute;
+    right: 3px;
+    border-radius: 10em;
+    width: 42px;
+    padding: 9px 0px;
+    text-align: center;
+    height: 42px;
+    top: calc(50% - 42px/2);
+    background: linear-gradient(360deg, rgba(255, 255, 255, 2e-05) 0%, rgba(255, 255, 255, 0.2) 100%);
+    border: 0.33px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+}
+.group:before{
+	top: 5%;
+    content: "";
+    position: absolute;
+    top: 0%;
+    height: 0%;
+    width: 18px;
+    margin: 14px -8px 0px;
+    height: 14px;
+    background: url(../img/Group.png);
+}
+/*button gambling*/
+
+/*404 404 404*/
+.content-not-page img{
+	margin: 244px auto;
+}
+@font-face{
+
+font-family: 'Catamaran';
+
+src: url('../fonts/Catamaran.eot');
+
+src: url('../fonts/Catamaran.eot?iefix') format('eot'),
+
+url('../fonts/Catamarant.woff') format('woff'),
+
+url('../fonts/Catamaran.ttf') format('truetype'),
+
+
+font-weight: normal;
+
+font-style: normal;
+
+font-family: 'catamaran-bold';
+
+src: url('../fonts/catamaran-bold.eot');
+
+src: url('../fonts/catamaran-bold.eot?iefix') format('eot'),
+
+url('../fonts/catamaran-bold.woff') format('woff'),
+
+url('../fonts/catamaran-bold.ttf') format('truetype'),
+
+url('../fonts/catamaran-bold.svg#webfont') format('svg');
+
+font-weight: normal;
+
+font-style: normal;
+
+}
